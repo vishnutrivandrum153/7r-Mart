@@ -6,9 +6,8 @@
       <class name="testScript.LoginTest">
         <methods>
           <include name="browserInitilization"/>
-          <include name="invalidUsernameValidPassword"/>
+          <include name="validUsernameAndPassword"/>
           <include name="browserQuitAndClose"/>
-          <include name="invalidUsernameAnddPassword"/>
         </methods>
       </class> <!-- testScript.LoginTest -->
     </classes>

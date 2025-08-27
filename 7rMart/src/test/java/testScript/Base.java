@@ -1,12 +1,15 @@
 package testScript;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import utilities.ScreenShotUtility;
 import utilities.WaitUtility;
 
 
@@ -25,8 +28,13 @@ public class Base {
 		}
 	
 	@AfterMethod(alwaysRun = true)
-	public void browserQuitAndClose()
+	public void browserQuitAndClose(ITestResult iTestResult) throws IOException
 		{
+		if (iTestResult.getStatus() == ITestResult.FAILURE)
+		{
+		ScreenShotUtility scrShot = new ScreenShotUtility(); // creating obj
+		scrShot.getScreenShot(driver, iTestResult.getName());
+		}
 		driver.quit(); //close all window
 		}
 

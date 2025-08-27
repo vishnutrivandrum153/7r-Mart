@@ -15,7 +15,7 @@ public class LoginTest extends Base {
 	public void validUsernameAndPassword() throws IOException 
 	{
 	String loginUserName = ExcelUtility.getstringData(1,0, "LoginPage"); 
-	String loginPassword = ExcelUtility.getstringData(2,1, "LoginPage");
+	String loginPassword = ExcelUtility.getstringData(1,1, "LoginPage");
 	LoginPage loginPage = new LoginPage(driver);
 	loginPage.enterUsername(loginUserName);
 	loginPage.enterPassword(loginPassword);

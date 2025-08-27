@@ -5,8 +5,9 @@
 <listener class-name="generateReport.Listeners"></listener> <!-- packageName.ClassName-->
 </listeners>
   <test thread-count="5" name="Test">
+   <parameter name="browser" value="chrome" />
     <classes>
-      <class name="testScript.LoginTest"/>
+      <class name="testScript.LogoutTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

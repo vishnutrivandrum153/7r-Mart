@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-27T19:45:51 IST" name="Default suite" finished-at="2025-08-27T19:45:59 IST" duration-ms="8171">
+  <suite started-at="2025-08-27T20:30:05 IST" name="Default suite" finished-at="2025-08-27T20:30:14 IST" duration-ms="8915">
     <groups>
     </groups>
-    <test started-at="2025-08-27T19:45:51 IST" name="Default test" finished-at="2025-08-27T19:45:59 IST" duration-ms="8171">
-      <class name="testScript.ManageNewsTest">
-        <test-method is-config="true" signature="browserInitilization()[pri:0, instance:testScript.ManageNewsTest@7cc0cdad]" started-at="2025-08-27T19:45:51 IST" name="browserInitilization" finished-at="2025-08-27T19:45:54 IST" duration-ms="3654" status="PASS">
+    <test started-at="2025-08-27T20:30:05 IST" name="Default test" finished-at="2025-08-27T20:30:14 IST" duration-ms="8915">
+      <class name="testScript.AdminUsersTest">
+        <test-method is-config="true" signature="browserInitilization()[pri:0, instance:testScript.AdminUsersTest@4d5d943d]" started-at="2025-08-27T20:30:05 IST" name="browserInitilization" finished-at="2025-08-27T20:30:09 IST" duration-ms="3841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitilization -->
-        <test-method signature="editNewsTest()[pri:2, instance:testScript.ManageNewsTest@7cc0cdad]" started-at="2025-08-27T19:45:54 IST" name="editNewsTest" finished-at="2025-08-27T19:45:58 IST" duration-ms="4009" status="PASS">
+        <test-method signature="addAdminTest()[pri:1, instance:testScript.AdminUsersTest@4d5d943d]" started-at="2025-08-27T20:30:09 IST" name="addAdminTest" description="Admin login" finished-at="2025-08-27T20:30:14 IST" duration-ms="4608" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editNewsTest -->
-        <test-method is-config="true" signature="browserQuitAndClose()[pri:0, instance:testScript.ManageNewsTest@7cc0cdad]" started-at="2025-08-27T19:45:58 IST" name="browserQuitAndClose" finished-at="2025-08-27T19:45:59 IST" duration-ms="433" status="PASS">
+        </test-method> <!-- addAdminTest -->
+        <test-method is-config="true" signature="browserQuitAndClose()[pri:0, instance:testScript.AdminUsersTest@4d5d943d]" started-at="2025-08-27T20:30:14 IST" name="browserQuitAndClose" finished-at="2025-08-27T20:30:14 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitAndClose -->
-      </class> <!-- testScript.ManageNewsTest -->
+      </class> <!-- testScript.AdminUsersTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

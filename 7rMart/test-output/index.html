@@ -103,12 +103,12 @@
                     <div class="method-list-content failed suite-ParallelTesting">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParallelTesting" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="editNewsTest">editNewsTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTesting" title="testScript.LoginTest" class="method navigator-link" hash-for-method="validUsernameAndPassword">validUsernameAndPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParallelTesting" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="postNewsTest">postNewsTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTesting" title="testScript.LoginTest" class="method navigator-link" hash-for-method="validUsernameInvalidPassword">validUsernameInvalidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-ParallelTesting -->
@@ -126,47 +126,14 @@
           <div class="suite-ParallelTesting-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testScript.ManageNewsTest</span>
+              <span class="class-name">testScript.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="editNewsTest">
-                  </a> <!-- editNewsTest -->
-                  <span class="method-name">editNewsTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, findElement {value=input.form-control[placeholder=&apos;Username&apos;], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52500/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at pages.LoginPage.enterUsername(LoginPage.java:30)
-	at testScript.ManageNewsTest.editNewsTest(ManageNewsTest.java:44)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 11 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="postNewsTest">
-                  </a> <!-- postNewsTest -->
-                  <span class="method-name">postNewsTest</span>
+                  <a name="validUsernameAndPassword">
+                  </a> <!-- validUsernameAndPassword -->
+                  <span class="method-name">validUsernameAndPassword</span>
                   <div class="stack-trace">org.apache.poi.EmptyFileException: The supplied file was empty (zero bytes long)
 	at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:157)
 	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
@@ -179,12 +146,55 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:315)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:289)
 	at utilities.ExcelUtility.getstringData(ExcelUtility.java:28)
-	at testScript.ManageNewsTest.postNewsTest(ManageNewsTest.java:18)
+	at testScript.LoginTest.validUsernameAndPassword(LoginTest.java:17)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validUsernameInvalidPassword">
+                  </a> <!-- validUsernameInvalidPassword -->
+                  <span class="method-name">validUsernameInvalidPassword</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5704a0c29048708da23327cc3f9e9333, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52673/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5704a0c29048708da23327cc3f9e9333
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
+	at pages.LoginPage.enterUsername(LoginPage.java:30)
+	at testScript.LoginTest.validUsernameInvalidPassword(LoginTest.java:33)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@29a3e63b[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@49dd26ab[Wrapped task = org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda/0x000002108120d810@416a12b7]] rejected from java.util.concurrent.ThreadPoolExecutor@382baa03[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.executeAsync(JdkHttpClient.java:384)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:413)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	... 25 more
 ... Removed 11 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -204,12 +214,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScript.ManageNewsTest&quot;&gt;
+      &lt;class name=&quot;testScript.LoginTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;editNewsTest&quot;/&gt;
-          &lt;include name=&quot;postNewsTest&quot;/&gt;
+          &lt;include name=&quot;validUsernameAndPassword&quot;/&gt;
+          &lt;include name=&quot;validUsernameInvalidPassword&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testScript.ManageNewsTest --&gt;
+      &lt;/class&gt; &lt;!-- testScript.LoginTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
 &lt;/suite&gt; &lt;!-- ParallelTesting --&gt;
@@ -237,7 +247,11 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">postNewsTest</span>
+                <span class="method-in-group-name">validUsernameAndPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validUsernameInvalidPassword</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -259,13 +273,13 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'editNewsTest')
-data.setCell(0, 2, 'testScript.ManageNewsTest')
-data.setCell(0, 3, 2052);
+data.setCell(0, 1, 'validUsernameInvalidPassword')
+data.setCell(0, 2, 'testScript.LoginTest')
+data.setCell(0, 3, 1977);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'postNewsTest')
-data.setCell(1, 2, 'testScript.ManageNewsTest')
-data.setCell(1, 3, 429);
+data.setCell(1, 1, 'validUsernameAndPassword')
+data.setCell(1, 2, 'testScript.LoginTest')
+data.setCell(1, 3, 377);
 window.suiteTableData['ParallelTesting']= { tableData: data, tableDiv: 'times-div-ParallelTesting'}
 return data;
 }
@@ -285,9 +299,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-ParallelTesting" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testScript.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">invalidUsernameAnddPassword</span>
+                <br/>
+                <span class="ignored-method-name">invalidUsernameValidPassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-ParallelTesting" class="panel">
@@ -296,36 +319,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScript.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScript.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitilization(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitilization(chrome)</span>
-                <span class="method-start">4 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">editNewsTest</span>
-                <span class="method-start">5165 ms</span>
+                <span class="method-name">validUsernameAndPassword</span>
+                <span class="method-start">5063 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">postNewsTest</span>
-                <span class="method-start">5167 ms</span>
+                <span class="method-name">validUsernameInvalidPassword</span>
+                <span class="method-start">5258 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuitAndClose([TestResult name=postNewsTest status=FAILURE method=ManageNewsTest.postNewsTest()[pri:1, instance:te...)</span>
-                <span class="method-start">5619 ms</span>
+                <span class="method-name">browserQuitAndClose([TestResult name=validUsernameAndPassword status=FAILURE method=LoginTest.validUsernameAndPassword()...)</span>
+                <span class="method-start">5453 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">browserQuitAndClose([TestResult name=editNewsTest status=FAILURE method=ManageNewsTest.editNewsTest()[pri:2, instance:te...)</span>
-                <span class="method-start">7225 ms</span>
+                <span class="method-name">browserQuitAndClose([TestResult name=validUsernameInvalidPassword status=FAILURE method=LoginTest.validUsernameInvalidPa...)</span>
+                <span class="method-start">7251 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

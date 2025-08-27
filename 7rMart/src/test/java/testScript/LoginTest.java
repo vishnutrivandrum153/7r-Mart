@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
 	
-	@Test(priority = 1)
+	@Test(priority = 1, groups= {"regression"})
 	public void validUsernameAndPassword() throws IOException 
 	{
 	String loginUserName = ExcelUtility.getstringData(1,0, "LoginPage"); 
@@ -24,7 +24,7 @@ public class LoginTest extends Base {
 	Assert.assertTrue(isHomePageLoaded);	
 	}   
 	
-	@Test(priority = 2)
+	@Test(priority = 2, groups= {"regression"})
 	public void validUsernameInvalidPassword() throws IOException 
 		{
 		String loginUserName = ExcelUtility.getstringData(2,0, "LoginPage"); 
@@ -37,7 +37,7 @@ public class LoginTest extends Base {
 		Assert.assertTrue(isAlertDisplayed);	
 		}
 	
-	@Test(priority = 3)
+	@Test(priority = 3, groups= {"regression"})
 	public void invalidUsernameValidPassword() throws IOException 
 		{
 		String loginUserName = ExcelUtility.getstringData(3,0, "LoginPage"); 
@@ -50,7 +50,7 @@ public class LoginTest extends Base {
 		Assert.assertTrue(isAlertDisplayed);	
 		}
 	
-	@Test(priority = 4)
+	@Test(priority = 4, groups= {"regression"})
 	public void invalidUsernameAnddPassword() throws IOException 
 		{
 		String loginUserName = ExcelUtility.getstringData(4,0, "LoginPage"); 

@@ -35,5 +35,31 @@ public class AdminUsersTest extends Base {
 		Assert.assertTrue(adminuserspage.isSuccessAlertDisplayed(), "Success Alert is not displayed");
 		
 	}
+	
+	@Test(priority = 2)
+	public void editAdminTest() throws IOException {
+		String loginUserName = ExcelUtility.getstringData(1,0, "LoginPage"); 
+		String loginPassword = ExcelUtility.getstringData(1,1, "LoginPage");
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.enterUsername(loginUserName);
+		loginPage.enterPassword(loginPassword);
+		loginPage.sigin();
+		
+		AdminUsersPage adminuserspage = new AdminUsersPage(driver);
+		adminuserspage.clickAddAdminLink();
+		adminuserspage.clickEditIcon();
+
+		FakerUtility fakerutility = new FakerUtility();
+		String newUserName = fakerutility.creatARandomFirstName(); 
+		String newPassword = fakerutility.creatARandomFirstName();
+		adminuserspage.editUsername(newUserName);
+		adminuserspage.editPassword(newPassword);
+		adminuserspage.editUserToStaff();
+		adminuserspage.clickUpdateAdminButton();
+		Assert.assertTrue(adminuserspage.isSuccessAlertDisplayed(), "Success Alert is not displayed");
+		
+		
+		
+	}
 
 }

@@ -7,7 +7,11 @@
   <test thread-count="5" name="Test">
    <parameter name="browser" value="chrome" />
     <classes>
-      <class name="testScript.ManageFooterTextTest"/>
+      <class name="testScript.AdminUsersTest">
+      <methods>
+      <include name="editAdminTest"></include>
+      </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

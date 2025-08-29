@@ -5,15 +5,15 @@
     <listener class-name="generateReport.Listeners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="testScript.ManageFooterTextTest">
+      <class name="testScript.ManageCategoryTest">
         <methods>
           <include name="browserInitilization"/>
-          <include name="editFooterText"/>
           <include name="browserQuitAndClose"/>
+          <include name="editImage"/>
         </methods>
-      </class> <!-- testScript.ManageFooterTextTest -->
+      </class> <!-- testScript.ManageCategoryTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

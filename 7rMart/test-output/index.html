@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.AdminUsersTest" class="method navigator-link" hash-for-method="editAdminTest">editAdminTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testScript.ManageCategoryTest" class="method navigator-link" hash-for-method="editImage">editImage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testScript.AdminUsersTest</span>
+              <span class="class-name">testScript.ManageCategoryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="editAdminTest">
-                  </a> <!-- editAdminTest -->
-                  <span class="method-name">editAdminTest</span>
+                  <a name="editImage">
+                  </a> <!-- editImage -->
+                  <span class="method-name">editImage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,13 +147,13 @@
     &lt;listener class-name=&quot;generateReport.Listeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScript.AdminUsersTest&quot;&gt;
+      &lt;class name=&quot;testScript.ManageCategoryTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;editAdminTest&quot;/&gt;
+          &lt;include name=&quot;editImage&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testScript.AdminUsersTest --&gt;
+      &lt;/class&gt; &lt;!-- testScript.ManageCategoryTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -195,14 +195,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'editAdminTest')
-data.setCell(0, 2, 'testScript.AdminUsersTest')
-data.setCell(0, 3, 5734);
+data.setCell(0, 1, 'editImage')
+data.setCell(0, 2, 'testScript.ManageCategoryTest')
+data.setCell(0, 3, 3011);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -217,16 +217,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testScript.AdminUsersTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">addAdminTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -235,18 +228,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScript.AdminUsersTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScript.ManageCategoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">browserInitilization(chrome)</span>
+                <span class="method-name">browserInitilization(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">editAdminTest</span>
-                <span class="method-start">3403 ms</span>
+                <span class="method-name">editImage</span>
+                <span class="method-start">8816 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuitAndClose([TestResult name=editAdminTest status=SUCCESS method=AdminUsersTest.editAdminTest()[pri:2, instance:...)</span>
-                <span class="method-start">9149 ms</span>
+                <span class="method-name">browserQuitAndClose([TestResult name=editImage status=SUCCESS method=ManageCategoryTest.editImage()[pri:1, instance:test...)</span>
+                <span class="method-start">11843 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

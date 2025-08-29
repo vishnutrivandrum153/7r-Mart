@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-28T08:10:38 IST" name="Suite" finished-at="2025-08-28T08:10:48 IST" duration-ms="9617">
+  <suite started-at="2025-08-28T11:44:58 IST" name="Suite" finished-at="2025-08-28T11:45:12 IST" duration-ms="14078">
     <groups>
     </groups>
-    <test started-at="2025-08-28T08:10:38 IST" name="Test" finished-at="2025-08-28T08:10:48 IST" duration-ms="9617">
-      <class name="testScript.AdminUsersTest">
-        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.AdminUsersTest@14dd7b39]" started-at="2025-08-28T08:10:38 IST" name="browserInitilization" finished-at="2025-08-28T08:10:41 IST" duration-ms="3398" status="PASS">
+    <test started-at="2025-08-28T11:44:58 IST" name="Test" finished-at="2025-08-28T11:45:12 IST" duration-ms="14078">
+      <class name="testScript.ManageCategoryTest">
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@2d0399f4]" started-at="2025-08-28T11:44:58 IST" name="browserInitilization" finished-at="2025-08-28T11:45:06 IST" duration-ms="8816" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitilization -->
-        <test-method signature="editAdminTest()[pri:2, instance:testScript.AdminUsersTest@14dd7b39]" started-at="2025-08-28T08:10:41 IST" name="editAdminTest" finished-at="2025-08-28T08:10:47 IST" duration-ms="5734" status="PASS">
+        <test-method signature="editImage()[pri:1, instance:testScript.ManageCategoryTest@2d0399f4]" started-at="2025-08-28T11:45:06 IST" name="editImage" finished-at="2025-08-28T11:45:09 IST" duration-ms="3011" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editAdminTest -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.AdminUsersTest@14dd7b39]" started-at="2025-08-28T08:10:47 IST" name="browserQuitAndClose" finished-at="2025-08-28T08:10:48 IST" duration-ms="397" status="PASS">
+        </test-method> <!-- editImage -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@2d0399f4]" started-at="2025-08-28T11:45:09 IST" name="browserQuitAndClose" finished-at="2025-08-28T11:45:12 IST" duration-ms="2149" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editAdminTest status=SUCCESS method=AdminUsersTest.editAdminTest()[pri:2, instance:testScript.AdminUsersTest@14dd7b39] output={null}]]]>
+                <![CDATA[[TestResult name=editImage status=SUCCESS method=ManageCategoryTest.editImage()[pri:1, instance:testScript.ManageCategoryTest@2d0399f4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitAndClose -->
-      </class> <!-- testScript.AdminUsersTest -->
+      </class> <!-- testScript.ManageCategoryTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -29,5 +29,23 @@ public class ManageCategoryTest extends Base {
 		managecategorypage.clickUpdateButton();
 		Assert.assertTrue(managecategorypage.isSuccessAlertDisplayed(), "Success Alert is not displayed");
 		}
+	
+	@Test(priority = 2)
+	public void addNewCategory() throws IOException
+		{
+		String loginUserName = ExcelUtility.getstringData(1,0, "LoginPage"); 
+		String loginPassword = ExcelUtility.getstringData(1,1, "LoginPage");
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.enterUsername(loginUserName);
+		loginPage.enterPassword(loginPassword);
+		loginPage.sigin();
+		
+		ManageCategoryPage managecategorypage = new ManageCategoryPage(driver);
+		managecategorypage.clickMoreInfoCategory();	
+		managecategorypage.clickAddNewCategoryButton();
+		managecategorypage.enterCategoryName("Burger");
+		managecategorypage.clickChooseFileButtonInAddNewCategory();
+		managecategorypage.clickSaveButtonInAddNewCategory();
+		}
 
 }

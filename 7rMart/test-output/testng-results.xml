@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-30T17:29:14 IST" name="Suite" finished-at="2025-08-30T17:29:23 IST" duration-ms="9115">
+  <suite started-at="2025-08-30T19:19:15 IST" name="Suite" finished-at="2025-08-30T19:19:22 IST" duration-ms="7644">
     <groups>
     </groups>
-    <test started-at="2025-08-30T17:29:14 IST" name="Test" finished-at="2025-08-30T17:29:23 IST" duration-ms="9115">
-      <class name="testScript.ManageContactTest">
-        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageContactTest@d23e042]" started-at="2025-08-30T17:29:14 IST" name="browserInitilization" finished-at="2025-08-30T17:29:18 IST" duration-ms="4024" status="PASS">
+    <test started-at="2025-08-30T19:19:15 IST" name="Test" finished-at="2025-08-30T19:19:22 IST" duration-ms="7644">
+      <class name="testScript.ManageCategoryTest">
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@14dd7b39]" started-at="2025-08-30T19:19:15 IST" name="browserInitilization" finished-at="2025-08-30T19:19:18 IST" duration-ms="3239" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitilization -->
-        <test-method signature="updateContactInfo()[pri:1, instance:testScript.ManageContactTest@d23e042]" started-at="2025-08-30T17:29:18 IST" name="updateContactInfo" finished-at="2025-08-30T17:29:23 IST" duration-ms="5004" status="PASS">
+        <test-method signature="addNewCategory()[pri:2, instance:testScript.ManageCategoryTest@14dd7b39]" started-at="2025-08-30T19:19:18 IST" name="addNewCategory" finished-at="2025-08-30T19:19:22 IST" duration-ms="4028" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateContactInfo -->
-      </class> <!-- testScript.ManageContactTest -->
+        </test-method> <!-- addNewCategory -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@14dd7b39]" started-at="2025-08-30T19:19:22 IST" name="browserQuitAndClose" finished-at="2025-08-30T19:19:22 IST" duration-ms="291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewCategory status=SUCCESS method=ManageCategoryTest.addNewCategory()[pri:2, instance:testScript.ManageCategoryTest@14dd7b39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitAndClose -->
+      </class> <!-- testScript.ManageCategoryTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

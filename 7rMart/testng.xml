@@ -5,11 +5,11 @@
 <listener class-name="generateReport.Listeners"></listener> <!-- packageName.ClassName-->
 </listeners>
   <test thread-count="5" name="Test">
-   <parameter name="browser" value="firefox" />
+   <parameter name="browser" value="chrome" />
     <classes>
-      <class name="testScript.ManageCategoryTest">
+      <class name="testScript.ManageContactTest">
       <methods>
-      <include name="editImage"></include>
+      <include name="updateContactInfo"></include>
       </methods>
       </class>
     </classes>

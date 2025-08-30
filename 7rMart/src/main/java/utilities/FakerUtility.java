@@ -30,6 +30,10 @@ public class FakerUtility {
 
 	}
 	
+	public String generatePhoneNumber() {
+	    return faker.number().digits(10);  // e.g., "9876543210"
+	}
+	
 
 
 }

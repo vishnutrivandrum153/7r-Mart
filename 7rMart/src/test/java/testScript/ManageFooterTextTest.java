@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.ManageFooterTextPage;
 import utilities.ExcelUtility;
+import utilities.FakerUtility;
 
 public class ManageFooterTextTest extends Base {
 	
@@ -24,9 +25,11 @@ public class ManageFooterTextTest extends Base {
 		ManageFooterTextPage managefootertextpage = new ManageFooterTextPage(driver);
 		managefootertextpage.clickMoreInfoLink();
 		managefootertextpage.clickEditIcon();
-		String address = "123 Main St, City, Country";
-		String email = "abcd@gmail.com";	
-		String phone = "+1234567890";
+		
+		FakerUtility fakerUtility = new FakerUtility();
+		String address = fakerUtility.generateAddress();
+		String email = fakerUtility.generateEmail();	
+		String phone = fakerUtility.generatePhoneNumber();
 		managefootertextpage.enterAddress(address);
 		managefootertextpage.enterEmail(email);
 		managefootertextpage.enterPhone(phone);

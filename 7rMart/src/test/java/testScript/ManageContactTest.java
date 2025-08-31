@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import pages.ManageContactPage;
 import utilities.ExcelUtility;
@@ -30,8 +31,8 @@ public class ManageContactTest extends Base {
 		String phoneNumber = fakerUtility.generatePhoneNumber();
 		String email = fakerUtility.generateEmail();
 		String address = fakerUtility.generateAddress();
-		String time ="10:30";
-		int chargeLimit = 300;
+		String time =  ExcelUtility.getTimeData(0, 0, "DeliveryTime");
+		int chargeLimit = Constant.DELIVERYCHARGELIMIT;
 		
 		managecontactpage.updatePhoneNumber(phoneNumber);
 		managecontactpage.updateEmail(email);

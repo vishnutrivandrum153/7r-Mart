@@ -2,7 +2,11 @@ package utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -57,6 +61,31 @@ public class ExcelUtility {
 		return String.valueOf(x); //convert any dayta type to string
 
 	}
+	
+	public static String getTimeData(int rowIndex, int cellIndex, String sheetName) throws IOException {
+        String filePath = Constant.TESTDATAFILEPATH;
+
+        try (FileInputStream f = new FileInputStream(filePath);
+             XSSFWorkbook wb = new XSSFWorkbook(f)) {
+
+            XSSFSheet sh = wb.getSheet(sheetName);
+            XSSFRow row = sh.getRow(rowIndex);
+
+            if (row == null) return "";
+            XSSFCell cell = row.getCell(cellIndex);
+            if (cell == null) return "";
+
+            if (cell.getCellType() == CellType.NUMERIC && DateUtil.isCellDateFormatted(cell)) {
+                Date date = cell.getDateCellValue();
+
+                // ⏰ Change format as needed (HH:mm:ss → 24hr, hh:mm a → 12hr with AM/PM)
+                SimpleDateFormat sdf = new SimpleDateFormat("hh:mm a");
+                return sdf.format(date);
+            } else {
+                return cell.toString(); // fallback
+            }
+        }
+    }
 
 	
 }

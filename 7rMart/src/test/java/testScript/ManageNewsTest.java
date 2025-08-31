@@ -38,7 +38,7 @@ public class ManageNewsTest extends Base {
 	{
 	String username = ExcelUtility.getstringData(1,0, "LoginPage"); 
 	String password = ExcelUtility.getstringData(1,1, "LoginPage");
-	String updatedDescription = "This is an updated news description!!!.";
+	String updatedDescription = ExcelUtility.getstringData(0,0, "News");
 	
 	LoginPage loginPage = new LoginPage(driver);
 	loginPage.enterUsername(username);

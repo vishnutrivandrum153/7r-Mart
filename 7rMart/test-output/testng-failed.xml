@@ -10,6 +10,7 @@
       <class name="testScript.ManageContactTest">
         <methods>
           <include name="browserInitilization"/>
+          <include name="browserQuitAndClose"/>
           <include name="updateContactInfo"/>
         </methods>
       </class> <!-- testScript.ManageContactTest -->

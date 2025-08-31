@@ -43,7 +43,8 @@ public class ManageCategoryTest extends Base {
 		ManageCategoryPage managecategorypage = new ManageCategoryPage(driver);
 		managecategorypage.clickMoreInfoCategory();	
 		managecategorypage.clickAddNewCategoryButton();
-		managecategorypage.enterCategoryName("Burger");
+		String categoryName = ExcelUtility.getstringData(0,0, "Categories");
+		managecategorypage.enterCategoryName(categoryName);
 		managecategorypage.clickChooseFileButtonInAddNewCategory();
 		managecategorypage.clickSaveButtonInAddNewCategory();
 		}

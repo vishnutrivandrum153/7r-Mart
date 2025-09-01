@@ -9,7 +9,7 @@
     <classes>
       <class name="testScript.ManageCategoryTest">
       <methods>
-      <include name="addNewCategory"></include>
+      <include name="editImage"></include>
       </methods>
       </class>
     </classes>

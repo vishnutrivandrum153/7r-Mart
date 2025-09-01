@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-31T15:05:50 IST" name="Suite" finished-at="2025-08-31T15:05:59 IST" duration-ms="8983">
+  <suite started-at="2025-09-01T07:58:13 IST" name="Suite" finished-at="2025-09-01T07:58:24 IST" duration-ms="10968">
     <groups>
     </groups>
-    <test started-at="2025-08-31T15:05:50 IST" name="Test" finished-at="2025-08-31T15:05:59 IST" duration-ms="8983">
+    <test started-at="2025-09-01T07:58:13 IST" name="Test" finished-at="2025-09-01T07:58:24 IST" duration-ms="10968">
       <class name="testScript.ManageCategoryTest">
-        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@14dd7b39]" started-at="2025-08-31T15:05:50 IST" name="browserInitilization" finished-at="2025-08-31T15:05:54 IST" duration-ms="4038" status="PASS">
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@14dd7b39]" started-at="2025-09-01T07:58:13 IST" name="browserInitilization" finished-at="2025-09-01T07:58:19 IST" duration-ms="5751" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitilization -->
-        <test-method signature="addNewCategory()[pri:2, instance:testScript.ManageCategoryTest@14dd7b39]" started-at="2025-08-31T15:05:54 IST" name="addNewCategory" finished-at="2025-08-31T15:05:59 IST" duration-ms="4487" status="PASS">
+        <test-method signature="editImage()[pri:1, instance:testScript.ManageCategoryTest@14dd7b39]" started-at="2025-09-01T07:58:19 IST" name="editImage" finished-at="2025-09-01T07:58:24 IST" duration-ms="4794" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewCategory -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@14dd7b39]" started-at="2025-08-31T15:05:59 IST" name="browserQuitAndClose" finished-at="2025-08-31T15:05:59 IST" duration-ms="373" status="PASS">
+        </test-method> <!-- editImage -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@14dd7b39]" started-at="2025-09-01T07:58:24 IST" name="browserQuitAndClose" finished-at="2025-09-01T07:58:24 IST" duration-ms="338" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewCategory status=SUCCESS method=ManageCategoryTest.addNewCategory()[pri:2, instance:testScript.ManageCategoryTest@14dd7b39] output={null}]]]>
+                <![CDATA[[TestResult name=editImage status=SUCCESS method=ManageCategoryTest.editImage()[pri:1, instance:testScript.ManageCategoryTest@14dd7b39] output={null}]]]>
               </value>
             </param>
           </params>

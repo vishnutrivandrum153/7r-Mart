@@ -48,8 +48,7 @@ public class ManageCategoryPage {
 	
 	public void clickUpdateButton() 
 		{
-		WaitUtility waitutility = new WaitUtility();
-		waitutility.waitForElementToBeClickable(driver, updateButton);
+		WaitUtility.waitForElementToBeClickable(driver, updateButton);
 		JavascriptExecutor js = (JavascriptExecutor) driver; //typecast the driver to JavascriptExecutor
 		js.executeScript("window.scrollBy(0,150)",""); 
 		js.executeScript("arguments[0].click();", updateButton);

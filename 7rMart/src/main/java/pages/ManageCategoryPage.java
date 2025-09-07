@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import constant.Constant;
 import utilities.FileUploadUtility;
+import utilities.PageUtility;
 import utilities.WaitUtility;
 
 public class ManageCategoryPage {
@@ -30,51 +30,70 @@ public class ManageCategoryPage {
 		PageFactory.initElements(driver, this);
 		}	
 	
-	public void clickMoreInfoCategory() 
+	/*/public void clickManageCategoryMoreInfo() 
 			{
 		moreInfoCategory.click();
-			}
+			}*/
 	
-	public void clickEditIcon()
+	public ManageCategoryPage clickEditIcon()
 		{
 		editIcon.click();
+		return this;
 		}
-	public void clickChooseFileButton() 
+	public ManageCategoryPage clickChooseFileButton() 
 		{
 		//chooseFileButton.sendKeys(filePath);
 		FileUploadUtility fileUploadutility = new FileUploadUtility();
 		fileUploadutility.fileUploadUsingSendkeys(chooseFileButton, Constant.TESTIMAGEFILEPATH);
+		return this;
 		}
 	
-	public void clickUpdateButton() 
+	public ManageCategoryPage clickUpdateButton() 
 		{
+		
 		WaitUtility.waitForElementToBeClickable(driver, updateButton);
-		JavascriptExecutor js = (JavascriptExecutor) driver; //typecast the driver to JavascriptExecutor
-		js.executeScript("window.scrollBy(0,150)",""); 
-		js.executeScript("arguments[0].click();", updateButton);
+		
+		PageUtility pageutlility = new PageUtility();
+		pageutlility.javaScriptScrollToBottom(driver);
+		pageutlility.javaScriptClick(driver, updateButton);
+		//JavascriptExecutor js = (JavascriptExecutor) driver; //typecast the driver to JavascriptExecutor
+		//js.executeScript("window.scrollBy(0,150)",""); 
+		//js.executeScript("arguments[0].click();", updateButton);
+		//JavaExecutionUtility javaexecutionutility = new JavaExecutionUtility();
+		//javaexecutionutility.javaScriptClick(driver, updateButton);
+		return this;
 		}
 	
-	public void clickAddNewCategoryButton() 
+	public ManageCategoryPage clickAddNewCategoryButton() 
 		{
 		addNewCategoryButton.click();
+		return this;
 		}
 	
-	public void enterCategoryName(String categoryName) 
+	public ManageCategoryPage enterCategoryName(String categoryName) 
 		{
 		categoryNameTextBox.sendKeys(categoryName);
+		return this;
 		}
 	
-	public void clickChooseFileButtonInAddNewCategory() 
+	public ManageCategoryPage clickChooseFileButtonInAddNewCategory() 
 		{
 		FileUploadUtility fileUploadutility = new FileUploadUtility();
 		fileUploadutility.fileUploadUsingSendkeys(chooseFileButtonInAddNewCategory, Constant.TESTIMAGEFILEPATH2);
+		return this;
 		}
 	
-	public void clickSaveButtonInAddNewCategory() 
+	public ManageCategoryPage clickSaveButtonInAddNewCategory() 
 		{
-		JavascriptExecutor js = (JavascriptExecutor) driver; //typecast the driver to JavascriptExecutor
-		js.executeScript("window.scrollBy(0,150)",""); 
-		js.executeScript("arguments[0].click();", saveButtonInAddNewCategory);
+	//	JavascriptExecutor js = (JavascriptExecutor) driver; //typecast the driver to JavascriptExecutor
+		//js.executeScript("window.scrollBy(0,150)",""); 
+	//	js.executeScript("arguments[0].click();", saveButtonInAddNewCategory);
+		
+		PageUtility pageutlility = new PageUtility();
+		pageutlility.javaScriptScrollToBottom(driver);
+		pageutlility.javaScriptScrollToBottom(driver);
+		pageutlility.javaScriptClick(driver, saveButtonInAddNewCategory);
+		return this;
 		}
 	
 	public boolean isSuccessAlertDisplayed() 

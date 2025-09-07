@@ -25,19 +25,22 @@ public class LoginPage {
 				// initElements : Method that tells selenium to locate elements marked with @FindBy annotation
 				}
 
-			public void enterUsername(String loginUserName) 
+			public LoginPage enterUsername(String loginUserName) 
 				{
-				username.sendKeys(loginUserName);						
+				username.sendKeys(loginUserName);
+				return this;						
 				}
 			
-			public void enterPassword(String loginPassword) 
+			public LoginPage enterPassword(String loginPassword) 
 				{
 				password.sendKeys(loginPassword);
+				return this;
 				}
 			
-			public void sigin()
+			public LogoutPage sigin()
 				{
 				loginButton.click();
+				return new LogoutPage(driver);
 				}
 			
 			public boolean isHomePageDisplayed( ) 

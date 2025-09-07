@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.PageUtility;
+
 
 
 public class ManageContactPage {
@@ -28,51 +30,58 @@ public class ManageContactPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickMoreInfoContact() 
+	/*public void clickManageContactMoreInfo() 
 	{
 		MoreInfoContact.click();
-	}
+	}*/
 	
-	public void clickContactEditIcon() 
+	public ManageContactPage clickContactEditIcon() 
 	{
 		contactEditIcon.click();
+		return this;
 	}
 	
-	public void updatePhoneNumber(String phoneNumber) 
+	public ManageContactPage updatePhoneNumber(String phoneNumber) 
 	{
 		phoneUpdateTextBox.clear();
 		phoneUpdateTextBox.sendKeys(phoneNumber);
+		return this;
 	}
 	
-	public void updateEmail(String email) 
+	public ManageContactPage updateEmail(String email) 
 	{
 		emailUpdateTextBox.clear();
 		emailUpdateTextBox.sendKeys(email);
+		return this;
 	}
 	
-	public void updateAddress(String address) 
+	public ManageContactPage updateAddress(String address) 
 	{
 		addressUpdateTextBox.clear();
 		addressUpdateTextBox.sendKeys(address);
+		return this;
 	}
 	
-	public void updateDeliveryTime(String time) 
+	public ManageContactPage updateDeliveryTime(String time) 
 	{
 		deliveryTimeUpdateTextBox.clear();
 		deliveryTimeUpdateTextBox.sendKeys(time);
+		return this;
 	}
 	
-	public void updateDeliveryChargeLimit(int chargeLimit) 
+	public ManageContactPage updateDeliveryChargeLimit(String chargeLimit) 
 	{
 		deliveryChargeLimitUpdateTextBox.clear();
 		deliveryChargeLimitUpdateTextBox.sendKeys(String.valueOf(chargeLimit));
+		return this;
 	}
 	
-	public void clickUpdateContactInfoButton() 
+	public ManageContactPage clickUpdateContactInfoButton() 
 	{
-		JavascriptExecutor js = (JavascriptExecutor) driver; //typecast the driver to JavascriptExecutor
-		js.executeScript("window.scrollBy(0,150)",""); 
-		js.executeScript("arguments[0].click();", updateContactInfoButton);	
+		PageUtility pageutlility = new PageUtility();
+		pageutlility.javaScriptScrollToBottom(driver);
+		pageutlility.javaScriptClick(driver, updateContactInfoButton);
+		return this;	
 	}
 	
 	public boolean isSuccessAlertDisplayed() 

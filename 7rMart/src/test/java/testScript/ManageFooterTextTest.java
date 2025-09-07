@@ -6,11 +6,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
+import pages.LogoutPage;
 import pages.ManageFooterTextPage;
 import utilities.ExcelUtility;
 import utilities.FakerUtility;
 
 public class ManageFooterTextTest extends Base {
+	
+	ManageFooterTextPage managefootertextpage;
+	LogoutPage logoutpage;
 	
 	@Test(priority = 1)
 	public void editFooterText() throws IOException
@@ -18,22 +22,22 @@ public class ManageFooterTextTest extends Base {
 		String loginUserName = ExcelUtility.getstringData(1,0, "LoginPage"); 
 		String loginPassword = ExcelUtility.getstringData(1,1, "LoginPage");
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.enterUsername(loginUserName);
-		loginPage.enterPassword(loginPassword);
-		loginPage.sigin();
+		loginPage.enterUsername(loginUserName).enterPassword(loginPassword).sigin();
+
 		
 		ManageFooterTextPage managefootertextpage = new ManageFooterTextPage(driver);
-		managefootertextpage.clickMoreInfoLink();
-		managefootertextpage.clickEditIcon();
+
+		LogoutPage logoutpage = new LogoutPage(driver);
+		managefootertextpage = logoutpage.ClickManageFooterTextMoreInfo();
+		
 		
 		FakerUtility fakerUtility = new FakerUtility();
 		String address = fakerUtility.generateAddress();
 		String email = fakerUtility.generateEmail();	
 		String phone = fakerUtility.generatePhoneNumber();
-		managefootertextpage.enterAddress(address);
-		managefootertextpage.enterEmail(email);
-		managefootertextpage.enterPhone(phone);
-		managefootertextpage.clickUpdateButton();
+		
+		managefootertextpage.clickEditIcon().enterAddress(address).enterEmail(email).enterPhone(phone).clickUpdateButton();
+	
 		Assert.assertTrue(managefootertextpage.isSuccessAlertDisplayed(), "Success Alert is not displayed");
 	}
 

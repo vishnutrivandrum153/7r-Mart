@@ -23,37 +23,43 @@ public class ManageFooterTextPage {
 		PageFactory.initElements(driver, this);
 		}
 	
-	public void clickMoreInfoLink()
+	public ManageFooterTextPage ClickManageFooterTextMoreInfo()
 		{
 		moreInfoLink.click();
+		return this;
 		}
 	
-	public void clickEditIcon() 
+	public ManageFooterTextPage clickEditIcon() 
 		{
 		editIcon.click();
+		return this;
 		}
 	
-	public void enterAddress(String address) 
+	public ManageFooterTextPage enterAddress(String address) 
 		{
 		addressTextBox.clear();
 		addressTextBox.sendKeys(address);
+		return this;
 		}
 	
-	public void enterEmail(String email) 
+	public ManageFooterTextPage enterEmail(String email) 
 		{
 		emailTextBox.clear();
 		emailTextBox.sendKeys(email);
+		return this;
 		}
 	
-	public void enterPhone(String phone) 
+	public ManageFooterTextPage enterPhone(String phone) 
 		{
 		phoneTextBox.clear();
 		phoneTextBox.sendKeys(phone);
+		return this;
 		}
 	
-	public void clickUpdateButton() 
+	public ManageFooterTextPage clickUpdateButton() 
 		{
 		updateButton.click();
+		return this;
 		}
 	
 	public boolean isSuccessAlertDisplayed() 

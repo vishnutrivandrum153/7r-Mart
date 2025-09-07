@@ -9,7 +9,7 @@ import utilities.PageUtility;
 
 public class AdminUsersPage {
 	
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")WebElement addAdminLink;
+	//@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")WebElement addAdminLink;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement addNewAdminButton;
 	@FindBy(xpath="//input[@name='username']")WebElement addNewAdminTextBox;
 	@FindBy(xpath="//input[@name='password']")WebElement passwordTextBoxAdmin;
@@ -31,36 +31,41 @@ public class AdminUsersPage {
 		}
 	
 	
-	public void clickAddAdminLink()
+/*	public void adminUserMoreInfo()
 	{
 		addAdminLink.click();
-	}
+	}*/
 	
-	public void clickAddNewAdminButton() 
+	public AdminUsersPage clickAddNewAdminButton() 
 	{
 		addNewAdminButton.click();
+		return this;
 	}
 	
-	public void enterNewAdminUsername(String username) 
+	public AdminUsersPage enterNewAdminUsername(String username) 
 	{
 		addNewAdminTextBox.sendKeys(username);
+		return this;
 	}
 	
-	public void enterNewAdminPassword(String password) 
+	public AdminUsersPage enterNewAdminPassword(String password) 
 	{
 		passwordTextBoxAdmin.sendKeys(password);
+		return this;
 	}
 	
-	public void selectUserType() 
+	public AdminUsersPage selectUserType() 
 	{
 		selectDropDown.click();
 		PageUtility pageutility = new PageUtility();
 		pageutility.selectByVisibleText(selectDropDown, "Admin");
+		return this;
 	}
 	
-	public void clickSaveAdminButton() 
+	public AdminUsersPage clickSaveAdminButton() 
 	{
 		saveAdminButton.click();
+		return this;
 	}
 	
 	public boolean isSuccessAlertDisplayed() 
@@ -68,33 +73,38 @@ public class AdminUsersPage {
 		return successAlertBox.isDisplayed();
 	}
 	
-	public void clickEditIcon() 
+	public AdminUsersPage clickEditIcon() 
 	{
 		editIcon.click();
+		return this;
 	}
 	
-	public void editUsername(String updatedUsername) 
+	public AdminUsersPage editUsername(String updatedUsername) 
 	{
 		editUsernameTextBox.clear();
 		editUsernameTextBox.sendKeys(updatedUsername);
+		return this;
 	}
 	
-	public void editPassword(String updatedPassword) 
+	public AdminUsersPage editPassword(String updatedPassword) 
 	{
 		editPasswordTextBox.clear();
 		editPasswordTextBox.sendKeys(updatedPassword);
+		return this;
 	}
 	
-	public void editUserToStaff() 
+	public AdminUsersPage editUserToStaff() 
 	{
 		editSelectDropDown.click();
 		PageUtility pageutility = new PageUtility();
 		pageutility.selectByVisibleText(editSelectDropDown, "Staff");
+		return this;
 	}
 	
-	public void clickUpdateAdminButton() 
+	public AdminUsersPage clickUpdateAdminButton() 
 	{
 		updateAdminButton.click();
+		return this;
 	}
 
 }

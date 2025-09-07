@@ -30,22 +30,25 @@ public class ManageNewsPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickNewsDescription() 
+	/*public void clickManageNewsMoreInfo() 
 	{
 		newsDescription.click();
-	}
+	}*/
 	
-	public void clickAddNewButton() 
+	public ManageNewsPage clickAddNewButton() 
 	{
 		addNewButton.click();
+		return this;
 	}
-	public void enterNewsDescription(String newsDescriptionText) 
+	public ManageNewsPage enterNewsDescription(String newsDescriptionText) 
 	{
 		textBox.sendKeys(newsDescriptionText);
+		return this;
 	}
-	public void clickSaveButton() 
+	public ManageNewsPage clickSaveButton() 
 	{
 		saveButton.click();
+		return this;
 	}
 	
 	public boolean isAlertDisplayed() 
@@ -53,52 +56,61 @@ public class ManageNewsPage {
 		return alertBox.isDisplayed();
 	}
 	
-	public void clickEditNewsButton() 
+	public ManageNewsPage clickEditNewsButton() 
 	{
 		editNewsButton.click();
+		return this;
 	}
 	
-	public void editNewsDescription(String updatedDescription) 
+	public ManageNewsPage editNewsDescription(String updatedDescription) 
 	{
 		editNewsTextBox.clear();
 		editNewsTextBox.sendKeys(updatedDescription);
+		return this;
 	}
 	
-	public void clickUpdateNewsButton() 
+	public ManageNewsPage clickUpdateNewsButton() 
 	{
 		updateNewsButton.click();
+		return this;
 	}
 	
-	public void clickAddAdminLink()
+	public ManageNewsPage clickAddAdminLink()
 	{
 		addAdminLink.click();
+		return this;
 	}
 	
-	public void clickAddNewAdminButton() 
+	public ManageNewsPage clickAddNewAdminButton() 
 	{
 		addNewAdminButton.click();
+		return this;
 	}
 	
-	public void enterNewAdminUsername(String username) 
+	public ManageNewsPage enterNewAdminUsername(String username) 
 	{
 		addNewAdminTextBox.sendKeys(username);
+		return this;
 	}
 	
-	public void enterNewAdminPassword(String password) 
+	public ManageNewsPage enterNewAdminPassword(String password) 
 	{
 		passwordTextBoxAdmin.sendKeys(password);
+		return this;
 	}
 	
-	public void selectUserType() 
+	public ManageNewsPage selectUserType() 
 	{
 		selectDropDown.click();
 		Select select = new Select(selectDropDown);
 		select.selectByVisibleText("Admin");
+		return this;
 	}
 	
-	public void clickSaveAdminButton() 
+	public ManageNewsPage clickSaveAdminButton() 
 	{
 		saveAdminButton.click();
+		return this;
 	}
 	
 

@@ -10,10 +10,17 @@
       <class name="testScript.ManageNewsTest">
         <methods>
           <include name="browserInitilization"/>
-          <include name="editNewsTest"/>
           <include name="browserQuitAndClose"/>
+          <include name="postNewsTest"/>
         </methods>
       </class> <!-- testScript.ManageNewsTest -->
+      <class name="testScript.ManageCategoryTest">
+        <methods>
+          <include name="browserInitilization"/>
+          <include name="browserQuitAndClose"/>
+          <include name="addNewCategory"/>
+        </methods>
+      </class> <!-- testScript.ManageCategoryTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

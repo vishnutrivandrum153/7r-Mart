@@ -18,7 +18,7 @@ public class AdminUsersTest extends Base {
 	LogoutPage logoutpage;
 
 	@Test(priority = 1, retryAnalyzer = retry.Retry.class, description = "Admin login")
-	public void addAdminTest() throws IOException {
+	public void addANewAdminInAdminUsersTest() throws IOException {
 		String loginUserName = ExcelUtility.getstringData(1, 0, "LoginPage");
 		String loginPassword = ExcelUtility.getstringData(1, 1, "LoginPage");
 
@@ -41,7 +41,7 @@ public class AdminUsersTest extends Base {
 	}
 
 	@Test(priority = 2)
-	public void editAdminTest() throws IOException {
+	public void updateDetailsOfAnExistingAdminInAdminUsersTest() throws IOException {
 		String loginUserName = ExcelUtility.getstringData(1, 0, "LoginPage");
 		String loginPassword = ExcelUtility.getstringData(1, 1, "LoginPage");
 

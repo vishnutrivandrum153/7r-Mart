@@ -17,7 +17,7 @@ public class ManageNewsTest extends Base {
 	LogoutPage logoutpage;
 
 	@Test(priority = 1, groups = { "regression" })
-	public void postNewsTest() throws IOException {
+	public void postANewsInManageNewsTest() throws IOException {
 
 		String loginUserName = ExcelUtility.getstringData(1, 0, "LoginPage");
 		String loginPassword = ExcelUtility.getstringData(1, 1, "LoginPage");
@@ -37,7 +37,7 @@ public class ManageNewsTest extends Base {
 	}
 
 	@Test(priority = 2, description = "Edit the news")
-	public void editNewsTest() throws IOException {
+	public void updateANewsInManageNewsTest() throws IOException {
 		String loginUserName = ExcelUtility.getstringData(1, 0, "LoginPage");
 		String loginPassword = ExcelUtility.getstringData(1, 1, "LoginPage");
 		String updatedDescription = ExcelUtility.getstringData(0, 0, "News");

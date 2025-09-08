@@ -18,7 +18,7 @@ public class ManageContactTest extends Base {
 	LogoutPage logoutpage;
 
 	@Test(priority = 1)
-	public void updateContactInfo() throws IOException {
+	public void updateContactInfoInManageCategory() throws IOException {
 		String loginUserName = ExcelUtility.getstringData(1, 0, "LoginPage");
 		String loginPassword = ExcelUtility.getstringData(1, 1, "LoginPage");
 

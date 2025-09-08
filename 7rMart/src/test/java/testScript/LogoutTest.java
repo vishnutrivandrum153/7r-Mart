@@ -12,7 +12,7 @@ import utilities.ExcelUtility;
 
 public class LogoutTest extends Base {
 	@Test(priority = 1)
-	public void testLogout() throws IOException {
+	public void logoutFromLoginPageTest() throws IOException {
 		String username = ExcelUtility.getstringData(1, 0, "LoginPage");
 		String password = ExcelUtility.getstringData(1, 1, "LoginPage");
 		LoginPage loginPage = new LoginPage(driver);

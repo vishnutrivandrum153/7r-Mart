@@ -18,7 +18,7 @@ public class ManageFooterTextTest extends Base {
 	LogoutPage logoutpage;
 
 	@Test(priority = 1)
-	public void editFooterText() throws IOException {
+	public void editFooterTextInManageFooterText() throws IOException {
 		String loginUserName = ExcelUtility.getstringData(1, 0, "LoginPage");
 		String loginPassword = ExcelUtility.getstringData(1, 1, "LoginPage");
 		LoginPage loginPage = new LoginPage(driver);

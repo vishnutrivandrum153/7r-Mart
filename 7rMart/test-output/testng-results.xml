@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-08T12:49:01 IST" name="Suite" finished-at="2025-09-08T12:49:21 IST" duration-ms="19720">
+  <suite started-at="2025-09-08T16:11:11 IST" name="Suite" finished-at="2025-09-08T16:12:03 IST" duration-ms="52442">
     <groups>
       <group name="regression">
-        <method signature="ManageNewsTest.postNewsTest()[pri:1, instance:testScript.ManageNewsTest@46d59067]" name="postNewsTest" class="testScript.ManageNewsTest"/>
+        <method signature="LoginTest.verificationOfLoginWithValidUsernameAndPasswordTest()[pri:1, instance:testScript.LoginTest@6f36c2f0]" name="verificationOfLoginWithValidUsernameAndPasswordTest" class="testScript.LoginTest"/>
+        <method signature="ManageNewsTest.postANewsInManageNewsTest()[pri:1, instance:testScript.ManageNewsTest@50029372]" name="postANewsInManageNewsTest" class="testScript.ManageNewsTest"/>
+        <method signature="LoginTest.verificationOfLoginWithValidUsernameAndInvalidPasswordTest()[pri:2, instance:testScript.LoginTest@6f36c2f0]" name="verificationOfLoginWithValidUsernameAndInvalidPasswordTest" class="testScript.LoginTest"/>
+        <method signature="LoginTest.verificationOfLoginWithInvalidUsernameAndValidPasswordTest()[pri:3, instance:testScript.LoginTest@6f36c2f0]" name="verificationOfLoginWithInvalidUsernameAndValidPasswordTest" class="testScript.LoginTest"/>
+        <method signature="LoginTest.verificationOfLoginWithInvalidUsernameAnddPasswordTest(java.lang.String,java.lang.String)[pri:4, instance:testScript.LoginTest@6f36c2f0]" name="verificationOfLoginWithInvalidUsernameAnddPasswordTest" class="testScript.LoginTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2025-09-08T12:49:01 IST" name="Test" finished-at="2025-09-08T12:49:21 IST" duration-ms="19720">
-      <class name="testScript.ManageNewsTest">
-        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageNewsTest@46d59067]" started-at="2025-09-08T12:49:01 IST" name="browserInitilization" finished-at="2025-09-08T12:49:05 IST" duration-ms="3427" status="PASS">
+    <test started-at="2025-09-08T16:11:11 IST" name="Test" finished-at="2025-09-08T16:12:03 IST" duration-ms="52442">
+      <class name="testScript.LoginTest">
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:11 IST" name="browserInitilization" finished-at="2025-09-08T16:11:14 IST" duration-ms="3404" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,22 +25,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitilization -->
-        <test-method signature="postNewsTest()[pri:1, instance:testScript.ManageNewsTest@46d59067]" started-at="2025-09-08T12:49:05 IST" name="postNewsTest" finished-at="2025-09-08T12:49:09 IST" duration-ms="4126" status="PASS">
+        <test-method signature="verificationOfLoginWithValidUsernameAndPasswordTest()[pri:1, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:14 IST" name="verificationOfLoginWithValidUsernameAndPasswordTest" finished-at="2025-09-08T16:11:17 IST" duration-ms="2481" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postNewsTest -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageNewsTest@46d59067]" started-at="2025-09-08T12:49:09 IST" name="browserQuitAndClose" finished-at="2025-09-08T12:49:09 IST" duration-ms="355" status="PASS">
+        </test-method> <!-- verificationOfLoginWithValidUsernameAndPasswordTest -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:17 IST" name="browserQuitAndClose" finished-at="2025-09-08T16:11:17 IST" duration-ms="320" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=postNewsTest status=SUCCESS method=ManageNewsTest.postNewsTest()[pri:1, instance:testScript.ManageNewsTest@46d59067] output={null}]]]>
+                <![CDATA[[TestResult name=verificationOfLoginWithValidUsernameAndPasswordTest status=SUCCESS method=LoginTest.verificationOfLoginWithValidUsernameAndPasswordTest()[pri:1, instance:testScript.LoginTest@6f36c2f0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitAndClose -->
-        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageNewsTest@46d59067]" started-at="2025-09-08T12:49:09 IST" name="browserInitilization" finished-at="2025-09-08T12:49:11 IST" duration-ms="2257" status="PASS">
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:17 IST" name="browserInitilization" finished-at="2025-09-08T16:11:19 IST" duration-ms="2168" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,15 +51,187 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitilization -->
-        <test-method signature="editNewsTest()[pri:2, instance:testScript.ManageNewsTest@46d59067]" started-at="2025-09-08T12:49:11 IST" name="editNewsTest" description="Edit the news" finished-at="2025-09-08T12:49:15 IST" duration-ms="3130" status="PASS">
+        <test-method signature="verificationOfLoginWithValidUsernameAndInvalidPasswordTest()[pri:2, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:19 IST" name="verificationOfLoginWithValidUsernameAndInvalidPasswordTest" finished-at="2025-09-08T16:11:20 IST" duration-ms="1052" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editNewsTest -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageNewsTest@46d59067]" started-at="2025-09-08T12:49:15 IST" name="browserQuitAndClose" finished-at="2025-09-08T12:49:15 IST" duration-ms="312" status="PASS">
+        </test-method> <!-- verificationOfLoginWithValidUsernameAndInvalidPasswordTest -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:20 IST" name="browserQuitAndClose" finished-at="2025-09-08T16:11:21 IST" duration-ms="298" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editNewsTest status=SUCCESS method=ManageNewsTest.editNewsTest()[pri:2, instance:testScript.ManageNewsTest@46d59067] output={null}]]]>
+                <![CDATA[[TestResult name=verificationOfLoginWithValidUsernameAndInvalidPasswordTest status=SUCCESS method=LoginTest.verificationOfLoginWithValidUsernameAndInvalidPasswordTest()[pri:2, instance:testScript.LoginTest@6f36c2f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitAndClose -->
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:21 IST" name="browserInitilization" finished-at="2025-09-08T16:11:23 IST" duration-ms="2275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitilization -->
+        <test-method signature="verificationOfLoginWithInvalidUsernameAndValidPasswordTest()[pri:3, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:23 IST" name="verificationOfLoginWithInvalidUsernameAndValidPasswordTest" finished-at="2025-09-08T16:11:24 IST" duration-ms="1094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificationOfLoginWithInvalidUsernameAndValidPasswordTest -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:24 IST" name="browserQuitAndClose" finished-at="2025-09-08T16:11:24 IST" duration-ms="300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verificationOfLoginWithInvalidUsernameAndValidPasswordTest status=SUCCESS method=LoginTest.verificationOfLoginWithInvalidUsernameAndValidPasswordTest()[pri:3, instance:testScript.LoginTest@6f36c2f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitAndClose -->
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:24 IST" name="browserInitilization" finished-at="2025-09-08T16:11:27 IST" duration-ms="2238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitilization -->
+        <test-method signature="verificationOfLoginWithInvalidUsernameAnddPasswordTest(java.lang.String,java.lang.String)[pri:4, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:27 IST" name="verificationOfLoginWithInvalidUsernameAnddPasswordTest" data-provider="LoginProvider" finished-at="2025-09-08T16:11:27 IST" duration-ms="766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificationOfLoginWithInvalidUsernameAnddPasswordTest -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@6f36c2f0]" started-at="2025-09-08T16:11:27 IST" name="browserQuitAndClose" finished-at="2025-09-08T16:11:28 IST" duration-ms="318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verificationOfLoginWithInvalidUsernameAnddPasswordTest status=SUCCESS method=LoginTest.verificationOfLoginWithInvalidUsernameAnddPasswordTest(java.lang.String,java.lang.String)[pri:4, instance:testScript.LoginTest@6f36c2f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitAndClose -->
+      </class> <!-- testScript.LoginTest -->
+      <class name="testScript.ManageCategoryTest">
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@3e2055d6]" started-at="2025-09-08T16:11:32 IST" name="browserInitilization" finished-at="2025-09-08T16:11:34 IST" duration-ms="2166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitilization -->
+        <test-method signature="updateImageOfAnExistingCategoryInManageCategoryTest()[pri:1, instance:testScript.ManageCategoryTest@3e2055d6]" started-at="2025-09-08T16:11:34 IST" name="updateImageOfAnExistingCategoryInManageCategoryTest" finished-at="2025-09-08T16:11:38 IST" duration-ms="3227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateImageOfAnExistingCategoryInManageCategoryTest -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@3e2055d6]" started-at="2025-09-08T16:11:38 IST" name="browserQuitAndClose" finished-at="2025-09-08T16:11:38 IST" duration-ms="316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateImageOfAnExistingCategoryInManageCategoryTest status=SUCCESS method=ManageCategoryTest.updateImageOfAnExistingCategoryInManageCategoryTest()[pri:1, instance:testScript.ManageCategoryTest@3e2055d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitAndClose -->
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageCategoryTest@3e2055d6]" started-at="2025-09-08T16:11:38 IST" name="browserInitilization" finished-at="2025-09-08T16:11:40 IST" duration-ms="2218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitilization -->
+        <test-method signature="addNewCategoryInManageCategoryTest()[pri:2, instance:testScript.ManageCategoryTest@3e2055d6]" started-at="2025-09-08T16:11:40 IST" name="addNewCategoryInManageCategoryTest" finished-at="2025-09-08T16:11:46 IST" duration-ms="6352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCategoryInManageCategoryTest -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageCategoryTest@3e2055d6]" started-at="2025-09-08T16:11:46 IST" name="browserQuitAndClose" finished-at="2025-09-08T16:11:47 IST" duration-ms="313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewCategoryInManageCategoryTest status=SUCCESS method=ManageCategoryTest.addNewCategoryInManageCategoryTest()[pri:2, instance:testScript.ManageCategoryTest@3e2055d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitAndClose -->
+      </class> <!-- testScript.ManageCategoryTest -->
+      <class name="testScript.ManageNewsTest">
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageNewsTest@50029372]" started-at="2025-09-08T16:11:47 IST" name="browserInitilization" finished-at="2025-09-08T16:11:49 IST" duration-ms="2196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitilization -->
+        <test-method signature="postANewsInManageNewsTest()[pri:1, instance:testScript.ManageNewsTest@50029372]" started-at="2025-09-08T16:11:49 IST" name="postANewsInManageNewsTest" finished-at="2025-09-08T16:11:52 IST" duration-ms="2651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postANewsInManageNewsTest -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageNewsTest@50029372]" started-at="2025-09-08T16:11:52 IST" name="browserQuitAndClose" finished-at="2025-09-08T16:11:52 IST" duration-ms="311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=postANewsInManageNewsTest status=SUCCESS method=ManageNewsTest.postANewsInManageNewsTest()[pri:1, instance:testScript.ManageNewsTest@50029372] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitAndClose -->
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageNewsTest@50029372]" started-at="2025-09-08T16:11:52 IST" name="browserInitilization" finished-at="2025-09-08T16:11:54 IST" duration-ms="2363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitilization -->
+        <test-method signature="updateANewsInManageNewsTest()[pri:2, instance:testScript.ManageNewsTest@50029372]" started-at="2025-09-08T16:11:54 IST" name="updateANewsInManageNewsTest" description="Edit the news" finished-at="2025-09-08T16:11:57 IST" duration-ms="2691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateANewsInManageNewsTest -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageNewsTest@50029372]" started-at="2025-09-08T16:11:57 IST" name="browserQuitAndClose" finished-at="2025-09-08T16:11:57 IST" duration-ms="304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateANewsInManageNewsTest status=SUCCESS method=ManageNewsTest.updateANewsInManageNewsTest()[pri:2, instance:testScript.ManageNewsTest@50029372] output={null}]]]>
               </value>
             </param>
           </params>
@@ -64,7 +240,7 @@
         </test-method> <!-- browserQuitAndClose -->
       </class> <!-- testScript.ManageNewsTest -->
       <class name="testScript.ManageFooterTextTest">
-        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageFooterTextTest@415b0b49]" started-at="2025-09-08T12:49:15 IST" name="browserInitilization" finished-at="2025-09-08T12:49:17 IST" duration-ms="2125" status="PASS">
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.ManageFooterTextTest@e3b3b2f]" started-at="2025-09-08T16:11:57 IST" name="browserInitilization" finished-at="2025-09-08T16:11:59 IST" duration-ms="2240" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,15 +251,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitilization -->
-        <test-method signature="editFooterText()[pri:1, instance:testScript.ManageFooterTextTest@415b0b49]" started-at="2025-09-08T12:49:17 IST" name="editFooterText" finished-at="2025-09-08T12:49:21 IST" duration-ms="3590" status="PASS">
+        <test-method signature="editFooterTextInManageFooterText()[pri:1, instance:testScript.ManageFooterTextTest@e3b3b2f]" started-at="2025-09-08T16:11:59 IST" name="editFooterTextInManageFooterText" finished-at="2025-09-08T16:12:03 IST" duration-ms="3341" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editFooterText -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageFooterTextTest@415b0b49]" started-at="2025-09-08T12:49:21 IST" name="browserQuitAndClose" finished-at="2025-09-08T12:49:21 IST" duration-ms="316" status="PASS">
+        </test-method> <!-- editFooterTextInManageFooterText -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.ManageFooterTextTest@e3b3b2f]" started-at="2025-09-08T16:12:03 IST" name="browserQuitAndClose" finished-at="2025-09-08T16:12:03 IST" duration-ms="313" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editFooterText status=SUCCESS method=ManageFooterTextTest.editFooterText()[pri:1, instance:testScript.ManageFooterTextTest@415b0b49] output={null}]]]>
+                <![CDATA[[TestResult name=editFooterTextInManageFooterText status=SUCCESS method=ManageFooterTextTest.editFooterTextInManageFooterText()[pri:1, instance:testScript.ManageFooterTextTest@e3b3b2f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -91,6 +267,34 @@
           </reporter-output>
         </test-method> <!-- browserQuitAndClose -->
       </class> <!-- testScript.ManageFooterTextTest -->
+      <class name="testScript.LogoutTest">
+        <test-method is-config="true" signature="browserInitilization(java.lang.String)[pri:0, instance:testScript.LogoutTest@18f8cd79]" started-at="2025-09-08T16:11:28 IST" name="browserInitilization" finished-at="2025-09-08T16:11:30 IST" duration-ms="2269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitilization -->
+        <test-method signature="logoutFromLoginPageTest()[pri:1, instance:testScript.LogoutTest@18f8cd79]" started-at="2025-09-08T16:11:30 IST" name="logoutFromLoginPageTest" finished-at="2025-09-08T16:11:32 IST" duration-ms="1895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromLoginPageTest -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testScript.LogoutTest@18f8cd79]" started-at="2025-09-08T16:11:32 IST" name="browserQuitAndClose" finished-at="2025-09-08T16:11:32 IST" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logoutFromLoginPageTest status=SUCCESS method=LogoutTest.logoutFromLoginPageTest()[pri:1, instance:testScript.LogoutTest@18f8cd79] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitAndClose -->
+      </class> <!-- testScript.LogoutTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

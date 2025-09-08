@@ -13,7 +13,7 @@ import utilities.ExcelUtility;
 public class LoginTest extends Base {
 
 	@Test(priority = 1, groups = { "regression" })
-	public void verificationOfLoginWithValidUsernameAndPassword() throws IOException {
+	public void verificationOfLoginWithValidUsernameAndPasswordTest() throws IOException {
 		String loginUserName = ExcelUtility.getstringData(1, 0, "LoginPage");
 		String loginPassword = ExcelUtility.getstringData(1, 1, "LoginPage");
 		LoginPage loginPage = new LoginPage(driver);
@@ -25,7 +25,7 @@ public class LoginTest extends Base {
 	}
 
 	@Test(priority = 2, groups = { "regression" })
-	public void verificationOfLoginWithValidUsernameAndInvalidPassword() throws IOException {
+	public void verificationOfLoginWithValidUsernameAndInvalidPasswordTest() throws IOException {
 		String loginUserName = ExcelUtility.getstringData(2, 0, "LoginPage");
 		String loginPassword = ExcelUtility.getstringData(2, 1, "LoginPage");
 		LoginPage loginPage = new LoginPage(driver);
@@ -37,7 +37,7 @@ public class LoginTest extends Base {
 	}
 
 	@Test(priority = 3, groups = { "regression" })
-	public void verificationOfLoginWithInvalidUsernameAndValidPassword() throws IOException {
+	public void verificationOfLoginWithInvalidUsernameAndValidPasswordTest() throws IOException {
 		String loginUserName = ExcelUtility.getstringData(3, 0, "LoginPage");
 		String loginPassword = ExcelUtility.getstringData(3, 1, "LoginPage");
 		LoginPage loginPage = new LoginPage(driver);
@@ -49,7 +49,7 @@ public class LoginTest extends Base {
 	}
 
 	@Test(priority = 4, groups = { "regression" }, dataProvider = "LoginProvider")
-	public void verificationOfLoginWithInvalidUsernameAnddPassword(String loginUserName, String loginPassword)
+	public void verificationOfLoginWithInvalidUsernameAnddPasswordTest(String loginUserName, String loginPassword)
 			throws IOException {
 		// String loginUserName = ExcelUtility.getstringData(4,0, "LoginPage");
 		// String loginPassword = ExcelUtility.getstringData(4,1, "LoginPage");

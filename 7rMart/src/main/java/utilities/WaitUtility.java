@@ -15,19 +15,19 @@ public class WaitUtility {
 	
 	
 	//Wait until the element is available in the DOM
-	public static void waitForElementToBeClickable(WebDriver driver,WebElement element) 
+	public void waitForElementToBeClickable(WebDriver driver,WebElement element) 
 		{
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(EXPLICITWAIT));
 	    wait.until(ExpectedConditions.elementToBeClickable(element));
 		}
 	
-	public static void waitForElementToBeVisible(WebDriver driver, WebElement element) 
+	public void waitForElementToBeVisible(WebDriver driver, WebElement element) 
 		{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICITWAIT));
 		wait.until(ExpectedConditions.visibilityOf(element));
 		}
 	
-	public static void waitForElementToBePresent(WebDriver driver, WebElement element) 
+	public void waitForElementToBePresent(WebDriver driver, WebElement element) 
 		{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICITWAIT));
 		wait.until(ExpectedConditions.alertIsPresent());

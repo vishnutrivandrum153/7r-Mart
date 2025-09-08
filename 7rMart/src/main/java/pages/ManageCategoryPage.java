@@ -51,7 +51,8 @@ public class ManageCategoryPage {
 	public ManageCategoryPage clickUpdateButton() 
 		{
 		
-		WaitUtility.waitForElementToBeClickable(driver, updateButton);
+		WaitUtility waitutility = new WaitUtility();
+		waitutility.waitForElementToBeClickable(driver, updateButton);
 		
 		PageUtility pageutlility = new PageUtility();
 		pageutlility.javaScriptScrollToBottom(driver);

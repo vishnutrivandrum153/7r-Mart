@@ -44,6 +44,8 @@ public class ManageCategoryTest extends Base {
 							.enterCategoryName(categoryName)
 							.clickChooseFileButtonInAddNewCategory()
 							.clickSaveButtonInAddNewCategory();
+		
+		Assert.assertTrue(managecategorypage.isFatalErrorMessageDisplayed(), Constant.ALERTNOTDISPLAYEDMESSAGE);
 
 	}
 

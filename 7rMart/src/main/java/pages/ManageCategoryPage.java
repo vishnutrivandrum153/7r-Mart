@@ -23,6 +23,7 @@ public class ManageCategoryPage {
 	@FindBy(xpath="//input[@id='main_img']")WebElement chooseFileButtonInAddNewCategory;
 	@FindBy(xpath="//button[@name='create']")WebElement saveButtonInAddNewCategory;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement successAlertBox;
+	@FindBy(xpath="//b[text()='Fatal error']")WebElement fatalErrorMessage;
 	
 	public ManageCategoryPage(WebDriver driver) 
 		{
@@ -100,6 +101,11 @@ public class ManageCategoryPage {
 	public boolean isSuccessAlertDisplayed() 
 		{
 		return successAlertBox.isDisplayed();
+		}
+	
+	public boolean isFatalErrorMessageDisplayed() 
+		{
+		return fatalErrorMessage.isDisplayed();
 		}
 	
 	

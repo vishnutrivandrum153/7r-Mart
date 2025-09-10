@@ -33,7 +33,7 @@ public class ManageNewsTest extends Base {
 
 		managenewspage.clickAddNewButton().enterNewsDescription(newsDescriptionText).clickSaveButton();
 
-		Assert.assertTrue(managenewspage.isAlertDisplayed(), Constant.ALERTNOTDISPLAYEDMESSAGE);
+		Assert.assertTrue(managenewspage.isAlertDisplayed(), Constant.NEWSPAGEPOSTALERTERRORMESSAGE);
 	}
 
 	@Test(priority = 2, description = "Edit the news")
@@ -51,7 +51,7 @@ public class ManageNewsTest extends Base {
 
 		managenewspage.clickEditNewsButton().editNewsDescription(updatedDescription).clickUpdateNewsButton();
 
-		Assert.assertTrue(managenewspage.isAlertDisplayed(), Constant.ALERTNOTDISPLAYEDMESSAGE);
+		Assert.assertTrue(managenewspage.isAlertDisplayed(), Constant.NEWSPAGEUPDATEALERTERRORMESSAGE);
 	}
 
 }

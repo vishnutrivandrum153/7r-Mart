@@ -40,7 +40,7 @@ public class ManageContactTest extends Base {
 				.updateAddress(address).updateDeliveryTime(time).updateDeliveryChargeLimit(chargeLimit)
 				.clickUpdateContactInfoButton();
 
-		Assert.assertTrue(managecontactpage.isSuccessAlertDisplayed(), Constant.ALERTNOTDISPLAYEDMESSAGE);
+		Assert.assertTrue(managecontactpage.isSuccessAlertDisplayed(), Constant.CONTACTPAGEALERTERRORMESSAGE);
 	}
 
 }// End of class

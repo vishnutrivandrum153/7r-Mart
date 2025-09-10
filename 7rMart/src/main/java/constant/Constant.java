@@ -10,5 +10,10 @@ public class Constant
 	public static final String HOMEPAGENOTLOADEDMESSAGE = "Home Page is not loaded";
 	public static final String LOGINPAGEALERTERRORMESSAGE = "Invalid user name/passord Alert message in login page is not displayed";
 	public static final String LOGINPAGENOTLOADEDMESSAGE = "Login Page is not displayed!";
+	public static final String CATEGORYPAGEALERTERRORMESSAGE = "Category Updated successfully alert message in List Categories Page not displayed";
+	public static final String CONTACTPAGEALERTERRORMESSAGE = "Contact Updated successfully alert message in Contact Page not displayed";
+	public static final String FOOTERPAGEALERTERRORMESSAGE = "Footer Text Updated successfully alert message in Footer text Page not displayed";
+	public static final String NEWSPAGEUPDATEALERTERRORMESSAGE = "News Updated successfully alert message in News Page not displayed";
+	public static final String NEWSPAGEPOSTALERTERRORMESSAGE = "News Posted successfully alert message in News Page not displayed";
 	
 }

@@ -27,7 +27,7 @@ public class ManageCategoryTest extends Base {
 		managecategorypage = logout.clickManageCategoryMoreInfo();
 		managecategorypage.clickEditIcon().clickChooseFileButton().clickUpdateButton();
 
-		Assert.assertTrue(managecategorypage.isSuccessAlertDisplayed(), Constant.ALERTNOTDISPLAYEDMESSAGE);
+		Assert.assertTrue(managecategorypage.isSuccessAlertDisplayed(), Constant.CATEGORYPAGEALERTERRORMESSAGE);
 	}
 
 	@Test(priority = 2)

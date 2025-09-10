@@ -37,7 +37,7 @@ public class ManageFooterTextTest extends Base {
 		managefootertextpage.clickEditIcon().enterAddress(address).enterEmail(email).enterPhone(phone)
 				.clickUpdateButton();
 
-		Assert.assertTrue(managefootertextpage.isSuccessAlertDisplayed(), Constant.ALERTNOTDISPLAYEDMESSAGE);
+		Assert.assertTrue(managefootertextpage.isSuccessAlertDisplayed(), Constant.FOOTERPAGEALERTERRORMESSAGE);
 	}
 
 }
